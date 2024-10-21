@@ -1,0 +1,11 @@
+# Program untuk menentukan kategori pengeluaran
+
+nominal = float(input("Masukkan nominal pengeluaran: "))
+periode = input("Periode pengeluaran (mingguan/bulanan): ").lower()
+
+if periode == "mingguan":
+    if nominal < 500_000:
+        print("Kategori: Rendah")
+elif periode == "bulanan":
+    if nominal < 2_000_000:
+        print("Kategori: Rendah")
